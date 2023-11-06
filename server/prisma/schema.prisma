@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id         Int      @id @default(autoincrement())
+  name       String   @unique
+  quantity   Int      @default(0)
+  price      Int      @default(999)
+  image      String   @default("https://img.freepik.com/free-photo/ice-coffee-with-whipped-cream_144627-3801.jpg?w=740&t=st=1692523251~exp=1692523851~hmac=71cf78b0a3631ff6b7556a3ffde76fa4fab28ac4ef6eb0db8d422a070fa1107b")
+  createdAt  DateTime @default(now())
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+}
+
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String    @unique
+  products Product[]
+}
+
+model Cart {
+  id         Int @id @default(autoincrement())
+  quantity   Int @default(0)
+  price      Int
+  total_cost Int
+}
+
+model Order {
+  id               Int     @id @default(autoincrement())
+  total            Decimal @default(999)
+  order_total      Int
+  discount_precent Int
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password Int    @unique
+  email    String @unique
+  address  String
+  p_number Int
+}
