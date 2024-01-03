@@ -19,6 +19,14 @@ import Kurti from '../assets/kurti.jpg'
 import Nightwear from '../assets/night.jpeg'
 import Makeup from '../assets/makeup.jpeg'
 import Watch from '../assets/123.jpeg'
+import Pants from '../assets/pant.jpeg'
+import Coat from '../assets/coat.jpeg' 
+import Coats from '../assets/coats.jpeg'
+import T from '../assets/t.jpeg'
+import Ts from '../assets/ts.jpeg'
+import Girls5 from '../assets/girls5.jpeg'
+import Girls6 from '../assets/girls.jpeg'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -75,6 +83,18 @@ const Main = () => {
       price: 1250
     },
     {
+      img: Girls6,
+      title: 'Womens-wear',
+      description: 'indian rupies',
+      price: 799
+    },
+    {
+      img: Ts,
+      title: "T-shirt",
+      description: 'indian rupies',
+      price:785
+  }  ,
+    {
       img: Longtop,
       title: 'Long-Kurti',
       description: 'indian rupies',
@@ -87,11 +107,43 @@ const Main = () => {
       price: 350
     },
     {
+      img: Pants,
+      title: "Pants",
+      description: 'indian rupies',
+      price:785
+  } ,
+  {
+      img: Coat,
+      title: "Coat",
+      description: 'indian rupies',
+      price:785
+  }  ,
+  {
+    img: Girls5,
+    title: 'Womens-wear',
+    description: 'indian rupies',
+    price: 799
+  },
+ 
+  {
+      img: T,
+      title: "T-shirt",
+      description: 'indian rupies',
+      price:785
+  }  ,
+
+    {
       img: Nightwear,
       title: 'Night-wear',
       description: 'indian rupies',
       price: 489
     },
+    {
+      img: Coats,
+      title: "Coat",
+      description: 'indian rupies',
+      price:785
+  }  ,
     {
       img: Bag,
       title: 'Hand-Bag',
@@ -153,10 +205,10 @@ const Main = () => {
   }
 
   return (
-    <div className=''>
-      <div className='inset-0 top-0 z-10'>
+    <div className='inset-0 top-0'>
+      <div >
  
-        <div className='header flex justify-between items-center  '>
+        <div className='header flex justify-between items-center  top-0'>
           <h1 className='text-4xl font-bold'>    <FcInTransit /> ONLINE  SHOP  🛒</h1>
           <div className="search flex justify-between items-center px-5 py-2 bg-gray-100 rounded">
             <input type="text" placeholder='Search product' className='bg-transparent outline-0 '
@@ -167,19 +219,19 @@ const Main = () => {
         </div>
         <div className="categories bg-white w-full  flex justify-between space-x-6 px-2 py-5">
           <div className="bg-black text-white px-4 py-2 rounded-full drop-shadow-xl">
-            <p>Watches</p>
+          <NavLink to='/Watch' > <p>Watches</p></NavLink>
           </div>
           <div className="bg-white  px-5 py-2 rounded-full drop-shadow-xl">
-            <p>Womens</p>
+          <NavLink to='/Girls' > <p>Womens</p> </NavLink>
           </div>
           <div className="bg-white  px-5 py-2 rounded-full drop-shadow-xl">
-            <p>Mens</p>
+          <NavLink to='/Mens' > <p>Mens</p> </NavLink>
           </div>
           <div className="bg-white  px-5 py-2 rounded-full drop-shadow-xl">
-            <p>Girls</p>
+          <NavLink to='/Girls' > <p>Girls</p> </NavLink>
           </div>
           <div className="bg-white  px-5 py-2 rounded-full drop-shadow-xl">
-            <p>Boys</p>
+          <NavLink to='/Mens' >  <p>Boys</p></NavLink>
           </div>
           <div className="bg-white  px-5 py-2 rounded-full drop-shadow-xl">
             <p>Nightwear</p>
@@ -217,7 +269,7 @@ const Main = () => {
         {Products && Products.map((product, idx) => {
           return (
             <button>
-            <div keu={idx} className="product h-[300px] bg-white drop-shadow-2xl p-2 border">
+            <div keu={idx} className="product h-[300px] bg-white drop-shadow-2xl p-2 border hover:scale-110 trasition duration-500 cursor-pointer object-cover">
              <img src={product.img} alt=" " className='w-full h-[60%] object-cover p-2' />
               <div className='m-2 bg-gray-100 p-2'>
                 <h1 className='text-xl font-semibold'>{product.title}</h1>

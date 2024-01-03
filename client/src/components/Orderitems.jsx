@@ -29,7 +29,7 @@ const Orderitems = () => {
                                 <tr className='border-dashed border-b'>
                                     <td className='py-5'>
                                         <div className='flex items-center space-x-3 py-2'>
-                                            <img src={image} alt="" />
+                                            <img className="hover:scale-110 trasition duration-500 cursor-pointer object-cover" src={image} alt="" />
                                             <div >
                                                 <h1 className='text-xl font-bold'>Watch</h1>
                                                 <p>Attractive Ethnic Smart Designer Leather Belt Analog watches
@@ -53,7 +53,9 @@ const Orderitems = () => {
 
                         <h5 className='text-2xl font-bold'>Order details 📦</h5>
                         <p className='text-gray-500'>Price Detais(1 Item)</p>
-                        <table class="table-auto">
+                      
+                
+                  <table class="table-auto">
                             <thead>
                                 <tr>
                                     <th>Total Price</th>
@@ -61,11 +63,11 @@ const Orderitems = () => {
                                     <th className='text3xl'>Order Total</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>+ ₹310</td>
-                                    <td>- ₹11</td>
-                                    <td>₹299</td>
+                            <tbody className='space-y-10'>
+                                <tr  className='border-dashed border-b'>
+                                    <td className='py-5'>+ ₹310</td>
+                                    <td className='py-5'>- ₹11</td>
+                                    <td className='py-5'>₹299</td>
                                 </tr>
                                
                             </tbody>

@@ -8,6 +8,9 @@ import Register from './Pages/Register'
 import Login from './Pages/Login'
 import Sidebar from './components/Sidebar'
 import Account from './Pages/Account'
+import Girls from './Pages/Girls'
+import Watch from './Pages/Watch'
+import Mens from './Pages/Mens'
 
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 
@@ -49,6 +52,15 @@ return (
           <li>
             <NavLink to="/Account" >Login</NavLink>
           </li>
+          <li>
+            <NavLink to="/Girls" >Girls</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Watch" >Watch</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Mens" >Mens</NavLink>
+          </li>
         </ul>
       </nav>
 
@@ -62,7 +74,9 @@ return (
         <Route path="/Register" Component={Register } /> 
         <Route path="/Login" Component={Login } />
         <Route path="/Account" Component={Account } />
-
+        <Route path="/Girls" Component={Girls } />
+        <Route path="/Watch" element={<Watch /> } />
+        <Route path="/Mens" Component={Mens } />
         
       </Routes>
       <Sidebar />

@@ -1,19 +1,19 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-import Main from '../components/Main'
+import Watchitems from '../components/Watchitems'
 
 
 
-const Home = () => {
+const Watch = () => {
   
    return (
       <div>
 
          <div className='ml-[80px]'>
-          <Main />
+          <Watchitems />
          </div>
       </div>
    )
 }
 
-export default Home
+export default Watch

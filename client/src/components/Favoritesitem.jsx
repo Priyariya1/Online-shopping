@@ -15,14 +15,14 @@ const Favoritesitem = () => {
   return (
     <div>
       <div className='w-11/12 m-auto py-10'>
-        <h1 className='text-3xl font-bold'>Favorite Items ❤️️</h1>
+        <h1 className='text-4xl font-bold'>Favorite Items ❤️️</h1>
         <p className='text-sm text-gray-400'>There are 5 Items in your Favorites</p>
         <section className='flex justify-between items-center space-x-10'>
           <div className='w-[60%] space-y-3'>
             <table className='w-full'>
               <thead >
                 <tr>
-                  <td className='text-gray-40 py-2'>Product 🛒</td>
+                  <td className='text-gray-40 py-2'>Product ⭐</td>
                   <td className='text-gray-40 py-2'>Price</td>
                   <td className='text-gray-40 py-2'>Quantity</td>
                   <td className='text-gray-40 py-2'>Total</td>
@@ -33,7 +33,7 @@ const Favoritesitem = () => {
                 <tr className='border-dashed border-b'>
                   <td className='py-5'>
                     <div className='flex items-center space-x-3 py-2'>
-                      <img src={image} alt="" />
+                      <img className="hover:scale-110 trasition duration-500 cursor-pointer object-cover"  src={image} alt="" />
                       <div >
                         <h1 className='text-xl font-bold'>Watch</h1>
                         <p>Lorem,ipsum.
@@ -89,7 +89,7 @@ const Favoritesitem = () => {
                 <tr className='border-dashed border-b'>
                   <td className='py-5'>
                     <div className='flex items-center space-x-3 py-2'>
-                      <img src={photo} alt="" />
+                      <img className="hover:scale-110 trasition duration-500 cursor-pointer object-cover" src={photo} alt="" />
                       <div >
                         <h1 className='text-xl font-bold'>Mens Set</h1>
                         <p>Lorem,ipsum.
@@ -143,7 +143,7 @@ const Favoritesitem = () => {
                 <tr className='border-dashed border-b'>
                   <td className='py-5'>
                     <div className='flex items-center space-x-3 py-2'>
-                      <img src={saree} alt="" />
+                      <img className="hover:scale-110 trasition duration-500 cursor-pointer object-cover" src={saree} alt="" />
                       <div >
                         <h1 className='text-xl font-bold'>Saree</h1>
                         <p>Lorem,ipsum.
@@ -197,7 +197,7 @@ const Favoritesitem = () => {
                 <tr className='border-dashed border-b'>
                   <td className='py-5'>
                     <div className='flex items-center space-x-3 py-2'>
-                      <img src={makeup} alt="" />
+                      <img className="hover:scale-110 trasition duration-500 cursor-pointer object-cover" src={makeup} alt="" />
                       <div >
                         <h1 className='text-xl font-bold'>Makeup Kit</h1>
                         <p>Lorem,ipsum.
@@ -251,7 +251,7 @@ const Favoritesitem = () => {
                 <tr className='border-dashed border-b'>
                   <td className='py-5'>
                     <div className='flex items-center space-x-3 py-2'>
-                      <img src={fashion} alt="" />
+                      <img className="hover:scale-110 trasition duration-500 cursor-pointer object-cover" src={fashion} alt="" />
                       <div >
                         <h1 className='text-xl font-bold'>Mens Ware</h1>
                         <p>Lorem,ipsum.

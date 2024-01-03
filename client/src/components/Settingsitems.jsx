@@ -9,7 +9,7 @@ const Settingsitems = () => {
   return (
     <div>
       <div className='w-11/12 m-auto py-10'>
-        <h1 className='text-3xl font-bold flex '>Online Shop  🛒</h1>
+        <h1 className='text-4xl font-bold flex '>Online Shop  🛒</h1>
         <h1 className='text-xl font-bold'>Settings</h1>
         <p className='text-sm text-gray-400'>Explore</p>
         <section className='flex justify-between items-center space-x-10'>

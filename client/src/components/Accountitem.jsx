@@ -20,7 +20,7 @@ const Orderitems = () => {
                     <div className='w-[60%] space-y-3'>
 
                         <table className='w-full'>
-                            <p className='text-gray-40 py-2'>Priya💜</p>
+                            <p className='text-gray-40 py-2'>Priya 💜</p>
 
                             <p className='text-sm text-gray-500'>Welcome your profile</p>
 
@@ -33,8 +33,8 @@ const Orderitems = () => {
                             <tbody className='space-y-10'>
                                 <tr className='border-dashed border-b'>
                                     <td className='py-5'>
-                                        <div className='flex items-center space-x-3 py-2'>
-                                            <img src={image} alt="" />
+                                        <div className='flex items-center space-x-3 py-2 '>
+                                            <img  className="hover:scale-110 trasition duration-500 cursor-pointer object-cover"src={image} alt="" />
                                             <div >
                                                 <h1 className=''> Name 😊  :Priya</h1>
                                                 <p className=''> Phone 📞 :6324678953

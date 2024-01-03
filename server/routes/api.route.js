@@ -150,6 +150,7 @@ router.delete('/users/:id', async (req, res, next) => {
 })
 
 // ========== all products =========
+
 router.get('/products', async (req, res, next) => {
     try {
         const products = await prisma.product.findMany()
